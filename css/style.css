@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    src: local('Montserrat Thin'), url('fonts/Montserrat-Thin.woff') format('woff');
+}
+    
+ 
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    src: local('Montserrat ExtraLight'), url('fonts/Montserrat-ExtraLight.woff') format('woff');
+}
+    
+  
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: local('Montserrat Light'), url('fonts/Montserrat-Light.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: local('Montserrat Regular'), url('fonts/Montserrat-Regular.woff') format('woff');
+} 
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: local('Montserrat Medium'), url('fonts/Montserrat-Medium.woff') format('woff');
+}
+    
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), url('fonts/Montserrat-SemiBold.woff') format('woff');
+}
+    
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    src: local('Montserrat Bold'), url('fonts/Montserrat-Bold.woff') format('woff');
+}
+    
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    src: local('Montserrat ExtraBold'), url('fonts/fonts/Montserrat-ExtraBold.woff') format('woff');
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-grey: #A5A5A5;
+    --color-semi-grey: #878787;
+    --color-semi-dark: #2D2D2D;
+    --color-dark: #232323;
+    --color-red: #EC5151;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #232323;
+}  
+
+h1 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 50px;
+    align-items: center;
+    color: var(--color-white);
+    text-align: center;
+    padding: 20%
+}
+
+h1 span {
+    color: var(--color-red);
+}
