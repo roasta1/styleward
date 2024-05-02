@@ -147,7 +147,7 @@ nav div.search_fb div.fb{
 
 header div.about {
     background-image: url(images/About.png);
-    height: 52.5vw;
+    height: 45vw;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'MontserratSemiBold';
@@ -240,6 +240,12 @@ header div.salebottom{
     
 }
 
+header div.salebottom img{
+    width: 99%;
+    height: 99%;
+    
+}
+
 header div.salebottom article img{
     background-color: var(--color-semi-dark);
     padding: 27px;
@@ -268,7 +274,7 @@ header div.P1P2 div.P1 {
     background-image: url(images/P1.png);
     height: 29vw;
     background-repeat: no-repeat;
-    width: 880px;
+    width: 870px;
     padding: 360px 92px 0px 92px;
 }
 
@@ -313,7 +319,7 @@ header div.P1P2 div.P2 {
     background-image: url(images/P2.png);
     height: 29vw;
     background-repeat: no-repeat;
-    width: 880px;
+    width: 870px;
     padding: 360px 92px 0px 92px;
 }
 
