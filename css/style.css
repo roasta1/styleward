@@ -359,6 +359,12 @@ header div.P1P2 div.P2 button:hover{
     transition: 0.5s;
 }
 
+header div.salelast img{
+    width: 99%;
+    height: 99%;
+    
+}
+
 header div.salelast article{
     display: grid;
     gap: 17px;
@@ -371,6 +377,8 @@ header div.salelast{
     padding: 0px 70px;
     padding-bottom: 130px;
 }
+
+
 
 header div.salelast article img{
     background-color: var(--color-semi-dark);
