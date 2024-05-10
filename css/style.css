@@ -68,6 +68,7 @@
 
 
 * {
+    position: static;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -80,20 +81,22 @@ body {
 
 nav {
     padding: 8px 70px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     background-color: var(--color-semi-dark);
     color: var(--color-white);
     align-items: center;
+    justify-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+
 }
 
 nav header{
-    padding-left: 18%;
     display: flex;
     gap: 38px;
     font-family: 'MontserratSemiBold';
     font-weight: 600;
     font-size: 20px;
+    justify-self: center;
 }
 
 nav header p {
@@ -108,6 +111,7 @@ nav header p:hover{
 
 nav img {
     cursor: pointer;
+    justify-self: start;
 }
 nav div.search_fb {
     display: flex;
@@ -129,6 +133,7 @@ nav div.search_fb div.search{
     gap: 10px;
     align-items: center;
     height: 40px;
+    width: 200px;
 }
 
 nav div.search_fb div.search input{
@@ -137,17 +142,18 @@ nav div.search_fb div.search input{
     font-family: 'MontserratSemiBold';
     font-weight: 600;
     font-size: 20px;
+    width: 120px;
 }
 
 nav div.search_fb div.fb{
-    display: flex;
-    gap: 46px;
     align-items: center;
+    display: grid;
+    column-gap: 46px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 header div.about {
     background-image: url(images/About.png);
-    height: 45vw;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'MontserratSemiBold';
@@ -155,7 +161,8 @@ header div.about {
     font-size: 20px;
     color: var(--color-white);
     align-content: center;
-    padding: 0px 70px;
+    padding: 188px 70px;
+    position: sticky;
 }
 
 header div.about h1{
@@ -234,48 +241,46 @@ header div.salebottom article{
 
 header div.salebottom{
     display: flex;
-    justify-content: space-between;
     padding: 0px 70px;
     padding-bottom: 0px;
-    
+    justify-content: space-between;
+    gap: 20px;
 }
 
 header div.salebottom img{
     width: 99%;
     height: 99%;
-    
-}
-
-header div.salebottom article img{
-    background-color: var(--color-semi-dark);
-    padding: 27px;
 }
 
 header div.salebottom article h4{
     font-family: 'MontserratMedium';
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
     color: var(--color-white);
 }
 
 header div.salebottom article h5{
     font-family: 'MontserratSemiBold';
-    font-size: 32px;
+    font-size: 26px;
     color: var(--color-white);
 }
 
 header div.P1P2{
     padding: 0px 70px 0px 70px;
+    gap: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 header div.P1P2 div.P1 {
     background-image: url(images/P1.png);
+    background-size: cover;
     height: 29vw;
     background-repeat: no-repeat;
     width: 870px;
-    padding: 360px 92px 0px 92px;
+    align-content: end;
+    padding-bottom: 50px;
+    padding-left: 60px;
 }
 
 header div.P1P2 div.P1 p{
@@ -319,8 +324,11 @@ header div.P1P2 div.P2 {
     background-image: url(images/P2.png);
     height: 29vw;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 870px;
-    padding: 360px 92px 0px 92px;
+    align-content: end;
+    padding-bottom: 50px;
+    padding-left: 60px;
 }
 
 header div.P1P2 div.P2 p{
@@ -359,12 +367,6 @@ header div.P1P2 div.P2 button:hover{
     transition: 0.5s;
 }
 
-header div.salelast img{
-    width: 99%;
-    height: 99%;
-    
-}
-
 header div.salelast article{
     display: grid;
     gap: 17px;
@@ -373,32 +375,33 @@ header div.salelast article{
 
 header div.salelast{
     display: flex;
-    justify-content: space-between;
     padding: 0px 70px;
     padding-bottom: 130px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-
-
-header div.salelast article img{
-    background-color: var(--color-semi-dark);
-    padding: 27px;
+header div.salelast img{
+    width: 99%;
+    height: 99%;
 }
 
 header div.salelast article h4{
     font-family: 'MontserratMedium';
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
     color: var(--color-white);
 }
 
 header div.salelast article h5{
     font-family: 'MontserratSemiBold';
-    font-size: 32px;
+    font-size: 26px;
     color: var(--color-white);
 }
 
 body>footer {
+    justify-content: center;
+    align-content: center;
     background-color: var(--color-semi-dark);
     padding: 65px 220px;
     display: grid;
@@ -506,3 +509,108 @@ footer div.footerfooter {
     gap: 168px;
     align-items: center;
 }
+
+
+@media all and (max-width: 1380px) {
+    nav div.search_fb{
+        padding-left: 38px;
+    }
+    nav header{
+        padding-left: 38px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    nav div.search_fb div.search{
+        display: flex;
+        font-family: 'MontserratSemiBold';
+        font-weight: 600;
+        color: #676767;
+        background-color: #41414100;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+    }
+    nav div.search_fb div.search input{
+        background-color: rgba(255, 255, 255, 0);
+        border: 0px solid rgba(255, 255, 255, 0);
+        font-family: 'MontserratSemiBold';
+        font-weight: 600;
+        font-size: 20px;
+        width: 0%;
+    }
+    nav div.search_fb {
+        display: flex;
+        justify-self: end;
+        gap: 46px;
+    }
+    nav {
+        padding: 8px 70px;
+        display: grid;
+        background-color: var(--color-semi-dark);
+        color: var(--color-white);
+        align-items: center;
+        justify-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+}
+
+/* PHONE */
+
+@media all and (max-width: 480px) {
+    nav, header, body>footer {
+        display: none;
+        visibility: hidden;
+        top: -9999px;
+    }
+    div.tablet {
+        display: none;
+        visibility: hidden;
+        top: -9999px;
+    }
+}
+
+@media all and (min-width: 480px) {
+    div.mobile {
+        display: none;
+        visibility: hidden;
+        top: -9999px;
+    }
+}
+
+/* TABLET */
+
+@media all and (max-width: 769px) {
+    nav, header, body>footer {
+        display: none;
+        visibility: hidden;
+        top: -9999px;
+    }
+}
+
+@media all and (min-width: 769px) {
+    div.tablet {
+        display: none;
+        visibility: hidden;
+        top: -9999px;
+    }
+}
+
+
+div.mobile {
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+
+div.tablet {
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+
+
