@@ -43,7 +43,7 @@
 
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'MontserratBold';
     font-weight: 800;
     src: local('Montserrat Bold'), url('fonts/Montserrat-Bold.woff') format('woff');
 }
@@ -214,6 +214,7 @@ header div.about div.h1h2{
 }
 
 header div.salehead{
+    align-items: center;
     padding: 130px 70px 33px 70px;
     display: flex;
     font-family: 'MontserratMedium';
@@ -229,6 +230,27 @@ header div.salehead h3{
 }
 
 header div.salehead>div{
+    gap: 20px;
+    cursor: pointer;
+}
+
+header div.salehead2{
+    align-items: center;
+    padding: 130px 70px 43px 70px;
+    display: flex;
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    color: var(--color-white);
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+header div.salehead2 h3{
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+}
+
+header div.salehead2>div{
     gap: 20px;
     cursor: pointer;
 }
@@ -604,13 +626,772 @@ div.mobile {
     font-family: sans-serif;
 }
 
-div.tablet {
-    font-size: 40px;
-    color: white;
-    font-family: sans-serif;
+div.tablet div.navtablet{
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-semi-dark);
+}
+
+div.tablet div.navtablet div.fbn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8vw;
+    align-items: center;
+}
+
+div.tablet div.navtablet div.fbn img.searchtablet, img.bintablet, img.favtablet{
+    height: 120%;
+}
+
+img.menutablet {
+    height: 100%;
+}
+
+div.tablet div.headertablet div.about {
+    background-image: url(images/About.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'MontserratSemiBold';
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-white);
+    align-content: center;
+    padding: 85px 30px;
+    position: sticky;
+}
+
+div.tablet div.headertablet  div.about h1{
+    font-size: 50px;
+    width: 70%;
+}
+
+div.tablet div.headertablet  div.about h2{
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+
+div.tablet div.headertablet  div.about h1 span{
+    color: var(--color-red);
+}
+
+div.tablet div.headertablet  div.about button.btntablet{
+    cursor: pointer;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    font-family: 'MontserratSemiBold';
+    font-size: 18px;
+    padding: 20px 70px;
+    transition: 0.5s;
+}
+
+div.tablet div.headertablet div.about button.btntablet:hover{
+    transition: 0.5s;
+    color: var(--color-white);
+    background-color: var(--color-red);
+
+}
+
+div.tablet div.headertablet  div.about div.h1h2{
+    display: grid;
+    row-gap: 2vw;
+}
+
+div.tablet div.headertablet div.salehead{
+    padding: 60px 30px 20px 30px;
+    display: flex;
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    color: var(--color-white);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+div.tablet div.headertablet div.salehead h3{
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+}
+
+div.tablet div.headertablet div.salehead>div{
+    gap: 20px;
+    cursor: pointer;
+}
+
+div.tablet div.headertablet div.salehead2{
+    padding: 60px 30px 30px 30px;
+    display: flex;
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    color: var(--color-white);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+div.tablet div.headertablet div.salehead2 h3{
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+}
+
+div.tablet div.headertablet div.salehead2>div{
+    gap: 20px;
+    cursor: pointer;
+}
+
+div.tablet div.headertablet div.salebottom article{
+    display: grid;
+    gap: 17px;
+    cursor: pointer;
+}
+
+div.tablet div.headertablet div.salebottom{
+    display: flex;
+    padding: 0px 30px;
+    padding-bottom: 0px;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+div.tablet div.headertablet div.salebottom img{
+    width: 99%;
+    height: 99%;
+}
+
+div.tablet div.headertablet div.salebottom article h4{
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--color-white);
+}
+
+div.tablet div.headertablet div.salebottom article h5{
+    font-family: 'MontserratSemiBold';
+    font-size: 26px;
+    color: var(--color-white);
 }
 
 
+div.tablet div.headertablet div.P1P2{
+    padding: 0px 30px 0px 30px;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.tablet div.headertablet div.P1P2 div.P1 {
+    background-image: url(images/P1_tablet.png);
+    background-size: cover;
+    height: 467px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 358px;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+div.tablet div.headertablet div.P1P2 div.P1 p{
+    cursor: pointer;
+    padding-bottom: 40px;
+    font-family: 'MontserratSemiBold';
+    font-size: 32px;
+    color: var(--color-white);
+}
+
+div.tablet div.headertablet div.P1P2 div.P1 button{
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+div.tablet div.headertablet div.P1P2 div.P1 button:hover{
+    color: var(--color-white);
+    background-color: var(--color-red);
+    transition: 0.5s;
+}
+
+div.tablet div.headertablet div.P1P2 div.P2 {
+    background-image: url(images/P2_tablet.png);
+    height: 467px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 358px;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+div.tablet div.headertablet div.P1P2 div.P2 p{
+    padding-bottom: 40px;
+    font-family: 'MontserratSemiBold';
+    font-size: 32px;
+    color: var(--color-white);
+}
+
+div.tablet div.headertablet div.P1P2 div.P2 button{
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-weight: 900;
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+div.tablet div.headertablet div.P1P2 div.P2 button:hover{
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+hr.hrtablet {
+    padding-bottom: 90px;
+    color: #00000000;
+}
+
+div.tablet div.headertablet>div.footertablet {
+    justify-content: center;
+    align-content: center;
+    background-color: var(--color-semi-dark);
+    padding: 34px 30px;
+    gap: 2px;
+}
+
+div.tablet div.headertablet div.footertablet div.footerheader ul li{
+    color: var(--color-grey);
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+div.tablet div.headertablet div.footertablet div.footerheader ul li:hover{
+    color: var(--color-white);
+    transition: 0.5s;
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+div.tablet div.headertablet div.footertablet div.footerheader ul{
+    display: grid;
+    gap: 12px;
+}
+
+div.tablet div.headertablet div.footertablet div.footerheader ul li.lihead{
+    cursor: pointer;
+    color: var(--color-white);
+    font-family: 'MontserratSemiBold';
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+div.tablet div.headertablet div.footertablet div.footerheader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 34px;
+}
+
+div.tablet div.headertablet div.footertablet div.footerfooter div.combined {
+    display: flex;
+    gap: 62px;
+    align-items: center;
+}
+
+div.tablet div.headertablet div.footertablet div.footerfooter div.combined div.location {
+    cursor: pointer;
+    display: flex;
+    font-family: 'MontserratSemiBold';
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-white);
+    align-items: center;
+}
+
+div.tablet div.headertablet div.footertablet div.footerfooter div.combined>p{
+    cursor: pointer;
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    color: var(--color-grey);
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+div.tablet div.headertablet div.footertablet div.footerfooter div.combined>p:hover{
+    cursor: pointer;
+    color: var(--color-white);
+    transition: 0.5s;
+}
+
+div.tablet div.headertablet div.footertablet div.footerfooter ul{
+    display: flex;
+    gap: 0;
+}
+
+div.tablet div.headertablet div.footertablet div.footerfooter ul li{
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-weight: 500;
+    color: var(--color-grey);
+    font-size: 14px;
+}
+
+div.tablet div.headertablet div.footertablet div.footerfooter ul li:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-weight: 500;
+    color: var(--color-white);
+    font-size: 14px;
+}
 
 
+div.tablet div.headertablet div.footertablet div.footerfooter {
+    justify-content: space-between;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
 
+
+/* MOBILE VER */
+
+div.mobile div.navtablet{
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-semi-dark);
+}
+
+div.mobile div.navtablet div.fbn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8vw;
+    align-items: center;
+}
+
+div.mobile div.navtablet div.fbn img.searchtablet, img.bintablet, img.favtablet{
+    height: 120%;
+}
+
+img.menutablet {
+    height: 100%;
+}
+
+div.mobile div.headertablet div.about {
+    background-image: url(images/About.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'MontserratSemiBold';
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-white);
+    align-content: center;
+    padding: 85px 30px;
+    display: grid;
+}
+
+div.mobile div.headertablet  div.about h1{
+    font-size: 50px;
+    width: 70%;
+}
+
+div.mobile div.headertablet  div.about h2{
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+div.mobile div.headertablet  div.about h1 span{
+    color: var(--color-red);
+}
+
+div.mobile div.headertablet  div.about button.btntablet{
+    cursor: pointer;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    font-family: 'MontserratSemiBold';
+    font-size: 18px;
+    padding: 15px 60px;
+    transition: 0.5s;
+}
+
+div.mobile div.headertablet div.about button.btntablet:hover{
+    transition: 0.5s;
+    color: var(--color-white);
+    background-color: var(--color-red);
+
+}
+
+div.mobile div.headertablet  div.about div.h1h2{
+    display: grid;
+    row-gap: 2vw;
+}
+
+div.mobile div.headertablet div.salehead{
+    padding: 60px 30px 30px 30px;
+    display: flex;
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    color: var(--color-white);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+div.mobile div.headertablet div.salehead h3{
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+}
+
+div.mobile div.headertablet div.salehead>div{
+    gap: 20px;
+    cursor: pointer;
+}
+
+div.mobile div.headertablet div.salehead2{
+    padding: 60px 30px 30px 30px;
+    display: flex;
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    color: var(--color-white);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+div.mobile div.headertablet div.salehead2 h3{
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+}
+
+div.mobile div.headertablet div.salehead2>div{
+    gap: 20px;
+    cursor: pointer;
+}
+
+div.mobile div.headertablet div.salebottom article{
+    display: grid;
+    gap: 17px;
+    cursor: pointer;
+}
+
+div.mobile div.headertablet div.salebottom{
+    display: flex;
+    padding: 0px 30px;
+    padding-bottom: 0px;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+div.mobile div.headertablet div.salebottom img{
+    width: 99%;
+    height: 99%;
+}
+
+div.mobile div.headertablet div.salebottom article h4{
+    font-family: 'MontserratMedium';
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--color-white);
+}
+
+div.mobile div.headertablet div.salebottom article h5{
+    font-family: 'MontserratSemiBold';
+    font-size: 26px;
+    color: var(--color-white);
+}
+
+
+div.mobile div.headertablet div.P1m{
+    padding: 0px 30px 20px 30px;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.mobile div.headertablet div.P1m div.P1 {
+    background-image: url(images/P1_tablet.png);
+    background-size: cover;
+    height: 467px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 358px;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+div.mobile div.headertablet div.P1m div.P1 p{
+    cursor: pointer;
+    padding-bottom: 40px;
+    font-family: 'MontserratSemiBold';
+    font-size: 32px;
+    color: var(--color-white);
+}
+
+div.mobile div.headertablet div.P1m div.P1 button{
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+div.mobile div.headertablet div.P1m div.P1 button:hover{
+    color: var(--color-white);
+    background-color: var(--color-red);
+    transition: 0.5s;
+}
+
+div.mobile div.headertablet div.P1m div.P2 {
+    background-image: url(images/P2_tablet.png);
+    height: 467px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 358px;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+div.mobile div.headertablet div.P1m div.P2 p{
+    padding-bottom: 40px;
+    font-family: 'MontserratSemiBold';
+    font-size: 32px;
+    color: var(--color-white);
+}
+
+div.mobile div.headertablet div.P1m div.P2 button{
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+div.mobile div.headertablet div.P1m div.P2 button:hover{
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+/* P2m */
+
+div.mobile div.headertablet div.P2m{
+    padding: 0px 30px 0px 30px;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.mobile div.headertablet div.P2m div.P1 {
+    background-image: url(images/P1_tablet.png);
+    background-size: cover;
+    height: 467px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 358px;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+div.mobile div.headertablet div.P2m div.P1 p{
+    cursor: pointer;
+    padding-bottom: 40px;
+    font-family: 'MontserratSemiBold';
+    font-size: 32px;
+    color: var(--color-white);
+}
+
+div.mobile div.headertablet div.P2m div.P1 button{
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+div.mobile div.headertablet div.P2m div.P1 button:hover{
+    color: var(--color-white);
+    background-color: var(--color-red);
+    transition: 0.5s;
+}
+
+div.mobile div.headertablet div.P2m div.P2 {
+    background-image: url(images/P2_tablet.png);
+    height: 467px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 358px;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+div.mobile div.headertablet div.P2m div.P2 p{
+    padding-bottom: 40px;
+    font-family: 'MontserratSemiBold';
+    font-size: 32px;
+    color: var(--color-white);
+}
+
+div.mobile div.headertablet div.P2m div.P2 button{
+    cursor: pointer;
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+div.mobile div.headertablet div.P2m div.P2 button:hover{
+    font-family: 'MontserratSemiBold';
+    font-size: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border: 0px solid rgba(255, 255, 255, 0);
+    padding: 8px 43px;
+    transition: 0.5s;
+}
+
+hr.hrtablet2 {
+    padding-bottom: 60px;
+    color: #00000000;
+}
+
+div.mobile div.headertablet>div.footertablet {
+    background-color: var(--color-semi-dark);
+    padding: 0 30px 25px 30px;
+}
+
+div.mobile div.headertablet div.footertablet div.helpmobile{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'MontserratSemiBold';
+}
+
+div.mobile div.headertablet div.footertablet div.helpmobile img{
+    width: 6%;
+}
+
+div.mobile div.headertablet div.footertablet div.combined div.location {
+    cursor: pointer;
+    display: flex;
+    font-family: 'MontserratSemiBold';
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-white);
+    align-items: center;
+}
+
+div.mobile div.headertablet div.footertablet div.combined div.location img{
+    width: 7%;
+}
+
+div.mobile div.headertablet div.footertablet div.combined{
+    display: grid;
+    gap: 20px;
+}
+
+div.mobile div.headertablet div.footertablet div.combined>p{
+    font-size: 14px;
+    color: var(--color-grey);
+}
+
+div.mobile div.headertablet div.footertablet{
+    display: grid;
+    gap: 20px;
+}
+
+div.mobile div.headertablet div.footertablet ul{
+    display: grid;
+    row-gap: 20px;
+}
+
+div.mobile div.headertablet div.footertablet ul li{
+    color: var(--color-grey);
+    font-size: 14px;
+}
