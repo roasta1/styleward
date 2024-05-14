@@ -877,6 +877,7 @@ div.tablet div.headertablet div.P1P2 div.P2 button:hover{
 hr.hrtablet {
     padding-bottom: 90px;
     color: #00000000;
+    border-color: #00000000;
 }
 
 div.tablet div.headertablet>div.footertablet {
@@ -1337,6 +1338,7 @@ div.mobile div.headertablet div.P2m div.P2 button:hover{
 hr.hrtablet2 {
     padding-bottom: 60px;
     color: #00000000;
+    border-color: #00000000;
 }
 
 div.mobile div.headertablet>div.footertablet {
